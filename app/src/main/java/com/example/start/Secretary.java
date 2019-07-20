@@ -5,6 +5,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.view.Menu;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -29,5 +30,11 @@ public class Secretary extends AppCompatActivity {
         tabLayout1=findViewById(R.id.tabLayout1);
         tabLayout1.setupWithViewPager(viewPager1,false);
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_item,menu);
+        return super.onCreateOptionsMenu(menu);
     }
 }
