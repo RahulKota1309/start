@@ -38,7 +38,9 @@ radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
                 break;
             case R.id.radsec:
-                Toast.makeText(MainActivity.this, "welcome secretary name", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(MainActivity.this, "welcome secretary name", Toast.LENGTH_SHORT).show();
+                Intent intent1=new Intent(MainActivity.this,Secretary.class);
+                startActivity(intent1);
                 break;
                 
         }
