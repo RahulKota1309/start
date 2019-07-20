@@ -29,11 +29,14 @@
         android:layout_width="398dp"
         android:layout_height="52dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
+        android:hint="name"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textColorHint="#0C0B0B"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imgstd" />
 
@@ -42,13 +45,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="id"
         android:inputType="textPersonName"
         android:textColorHint="#0C0B0B"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtname" />
 
@@ -57,14 +61,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="phone"
         android:inputType="phone"
         android:textColorHint="#090808"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtpass" />
 
@@ -73,19 +77,19 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="password"
         android:inputType="numberPassword"
         android:textColorHint="#090808"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtid" />
 
     <Button
-        android:id="@+id/edtsignup"
+        android:id="@+id/btnsignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -100,7 +104,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edtphone" />
 
     <Button
-        android:id="@+id/edtlogin"
+        android:id="@+id/btnlogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -109,6 +113,7 @@
         android:background="#E2A3A3"
         android:text="LOGIN"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtsignup" />
+        app:layout_constraintTop_toBottomOf="@+id/btnsignup" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        setTitle("Users");
+
         imgback=findViewById(R.id.imgback);
 radioGroup=findViewById(R.id.radgroup);
 radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
