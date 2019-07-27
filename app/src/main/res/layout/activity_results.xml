@@ -10,8 +10,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/appbarlayout">
 
-        <include android:id="@+id/myToolbar"
-            layout="@layout/my_toolbar"/>
+        <include
+            android:id="@+id/myToolbar"
+            layout="@layout/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_alignStart="@+id/appbarlayout"
+            android:layout_alignTop="@+id/appbarlayout" />
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
@@ -32,7 +37,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
         android:layout_marginEnd="0dp"
-        android:layout_marginBottom="0dp">
+        android:layout_marginBottom="0dp"
+        android:background="#0C0B0B">
 
     </androidx.viewpager.widget.ViewPager>
 

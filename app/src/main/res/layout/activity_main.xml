@@ -7,50 +7,34 @@
     android:background="#000"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imgback"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+    <Button
+        android:id="@+id/btnclub"
+        android:layout_width="178dp"
+        android:layout_height="68dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:alpha="0.3"
-        android:scaleY="2.5"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/round_corner"
+        android:text="CLUB MEMBERS"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnstd" />
+
+    <Button
+        android:id="@+id/btnstd"
+        android:layout_width="178dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/round_corner"
+        android:text="STUDENT"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cat" />
-
-    <RadioGroup
-        android:id="@+id/radgroup"
-        android:layout_width="0dp"
-        android:layout_height="129dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imgback" >
-
-        <RadioButton
-            android:id="@+id/radstd"
-            android:layout_width="match_parent"
-            android:layout_height="42dp"
-            android:layout_weight="1"
-            android:background="#329BAA"
-            android:text="STUDENT"
-            android:textColor="#fff"
-            android:textSize="24sp" />
-
-        <RadioButton
-            android:id="@+id/radsec"
-            android:layout_width="match_parent"
-            android:layout_height="42dp"
-            android:layout_weight="1"
-            android:background="#2D682D"
-            android:text="SECRETARY"
-            android:textColor="#fff"
-            android:textSize="24sp" />
-    </RadioGroup>
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
