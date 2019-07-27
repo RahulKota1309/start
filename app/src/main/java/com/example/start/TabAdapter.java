@@ -24,6 +24,7 @@ public class TabAdapter extends FragmentPagerAdapter {
                 return clubsTab;
             case 2:
                 return new DescriptionTab();
+
                 default:
                     return null;
         }
