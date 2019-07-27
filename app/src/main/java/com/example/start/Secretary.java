@@ -6,6 +6,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -21,6 +22,7 @@ public class Secretary extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_secretary);
 
+        setTitle("ClubMembers");
         toolbar1=findViewById(R.id.myToolbar1);
         setSupportActionBar(toolbar1);
         viewPager1=findViewById(R.id.viewpager1);
@@ -36,5 +38,22 @@ public class Secretary extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_item,menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+switch(item.getItemId()){
+    case R.id.logout:
+        break;
+    case R.id.settings:
+        break;
+    case R.id.camera:
+
+
+        break;
+
+}
+
+        return super.onOptionsItemSelected(item);
     }
 }
