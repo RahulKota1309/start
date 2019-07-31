@@ -74,10 +74,12 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
-        Bitmap bitmap = (Bitmap) data.getExtras().get("data");
-        imgcam.setImageBitmap(bitmap);
-
+try {
+    Bitmap bitmap = (Bitmap) data.getExtras().get("data");
+    imgcam.setImageBitmap(bitmap);
+}catch(Exception e){
+    e.printStackTrace();
+}
 //        if (requestCode==0&&resultCode==RESULT_OK&&data!=null){
 //            Uri selectedImage1=data.getData();
 //            try{
