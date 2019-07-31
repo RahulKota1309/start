@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -48,6 +49,8 @@ switch(item.getItemId()){
     case R.id.settings:
         break;
     case R.id.camera:
+        Intent intent =new Intent (Secretary.this,UploadActivity.class);
+        startActivity(intent);
 
 
         break;
