@@ -31,6 +31,8 @@ public class UploadActivity extends AppCompatActivity implements View.OnClickLis
                 startActivity(intent);
                 break;
             case R.id.txtupcoming:
+                Intent intent1=new Intent (UploadActivity.this,GalleryActivity.class);
+                startActivity(intent1);
                 break;
 
         }
