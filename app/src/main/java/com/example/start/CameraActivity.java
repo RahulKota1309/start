@@ -78,7 +78,15 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
         Bitmap bitmap = (Bitmap) data.getExtras().get("data");
         imgcam.setImageBitmap(bitmap);
 
-
+//        if (requestCode==0&&resultCode==RESULT_OK&&data!=null){
+//            Uri selectedImage1=data.getData();
+//            try{
+//                Bitmap bitmap=MediaStore.Images.Media.getBitmap(getContentResolver(),selectedImage1);
+//                imgcam.setImageBitmap(bitmap);
+//            }catch(Exception e){
+//                e.printStackTrace();
+//            }
+//        }
 
 
 
