@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -31,6 +32,7 @@ public   RecyclerUpcoming(Context context,ArrayList<String> clubnames)
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
     View v=layoutInflater.inflate(R.layout.custumized_recycler_upcoming,parent,false);
+    //v.setOnClickListener();
         MyViewHolder mv=new MyViewHolder(v);
         return mv;
     }
@@ -40,6 +42,7 @@ public   RecyclerUpcoming(Context context,ArrayList<String> clubnames)
 
         MyViewHolder myViewHolder=(MyViewHolder)holder;
         myViewHolder.txtclub.setText(clubnames.get(position));
+
 
     }
 

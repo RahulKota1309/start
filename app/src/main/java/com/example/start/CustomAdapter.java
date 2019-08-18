@@ -9,6 +9,8 @@ import android.widget.BaseAdapter;
 import android.widget.GridLayout;
 import android.widget.ImageView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 public class CustomAdapter extends BaseAdapter {
@@ -46,6 +48,11 @@ public class CustomAdapter extends BaseAdapter {
         ImageView imgview=view.findViewById(R.id.image);
         imgview.setImageResource(arrayList1.get(position));
 imgview.setPadding(10,10,10,10);
+
+//String picturefotrmat=arraylist1.get(position);
+//        String pictureurls="photos";                                      //this is used for getting image from server
+//       Picasso.get().load(pictureurls+pictureformat).into(imageview);
+
       return view;
     }
 }

@@ -10,6 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.like.LikeButton;
+
 import java.util.ArrayList;
 
 public class Recycleadapter extends RecyclerView.Adapter{
@@ -51,6 +53,7 @@ public class Recycleadapter extends RecyclerView.Adapter{
         TextView name;
         ImageView imageView;
         ImageView imageView2;
+        LikeButton likeButton;
 
         MyViewHolder(View itemview) {
             super(itemview);
@@ -58,6 +61,7 @@ public class Recycleadapter extends RecyclerView.Adapter{
             name = itemview.findViewById(R.id.textView);
             imageView=itemview.findViewById(R.id.imageView);
             imageView2=itemview.findViewById(R.id.imageview2);
+            likeButton=itemview.findViewById(R.id.likebutton);
         }
 
 

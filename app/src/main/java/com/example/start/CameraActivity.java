@@ -77,6 +77,7 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
 try {
     Bitmap bitmap = (Bitmap) data.getExtras().get("data");
     imgcam.setImageBitmap(bitmap);
+    imgcam.setScaleType(ImageView.ScaleType.FIT_XY);
 }catch(Exception e){
     e.printStackTrace();
 }
